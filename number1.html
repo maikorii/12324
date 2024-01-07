@@ -1,0 +1,114 @@
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #8378ad;
+}
+
+.container {
+  width: 100%;
+  padding-top: 100px;
+}
+
+.table {
+  position: relative;
+  margin: 0 auto;
+  width: 450px;
+  height: 700px;
+  perspective: 700px;
+  box-shadow: 20px 10px 40px gray;
+}
+
+.card {
+  background: white;
+  position: absolute;
+  width: 450px;
+  height: 700px;
+  top: 0;
+  left: 0;
+  border: 1px solid gray;
+  padding: 20px;
+  /* backface-visibility: hidden;  */
+  transition: all 0.5s ease-out;
+  transform-origin: 0 0;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+@keyframes bounce {
+  0% { transform: rotateY(0); }
+  100% { transform: rotateY(-10deg); }
+}
+
+.card.card-front {
+  z-index: 2;
+  animation: bounce 1.5s ease-in-out 1s infinite alternate;
+  font-family: Sacramento, cursive;
+  text-align: center;
+}
+
+.table:hover .card.card-front {
+  animation: none;
+  transform: rotateY(-85deg);
+}
+
+.card.card-back {
+  z-index: 1;
+  padding: 30px;
+  font-family: Trirong, serif;
+  font-size: 10px;
+}
+</style>
+  <head>
+    <title>January23rd</title>
+    <link rel="shortcut icon" href="./yanahha.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="table">
+        <div class="card card-back">
+          <p><b>
+            Hey...<br>
+            <br>
+            Happy 1st Anniversary, my love! <br>
+			As I sit down to pen down my feelings, I am overwhelmed with gratitude for having you by my side this past year. <br>
+			Today marks a significant milestone in our journey together, and I couldn't be more thrilled to celebrate this special day with you.<br>
+			Reflecting on the past 12 months, I am filled with an indescribable joy and warmth. <br>
+			You have been the source of countless smiles, laughter, and cherished moments. From the ordinary days to the extraordinary ones, <br>
+			you've turned every experience into something extraordinary, simply by being a part of it.<br>
+<br>
+			Your presence in my life is like a gentle breeze that soothes my soul and a radiant light that brightens even the darkest corners of my heart. <br>
+			You've brought a sense of completeness and happiness that I never knew was missing. <br>
+			Your kindness, compassion, and unwavering support have been my anchor, grounding me in the stormy seas of this stupid life(ty).<br>
+			But it's not just about the big gestures or the grand moments; <br>
+			it's the little things that make you incredibly special to me. <br>
+			The way you make me laugh when I need it the most, the comfort of your embrace, <br>
+			and the understanding in your eyes that speaks volumes even when words fail us. <br>
+			It's the way you love me, flaws and all, that has made this journey so beautiful.<br>
+<br>			
+			As we celebrate this first anniversary, I want you to know that you are more than just a boyfriend to me; you are my partner in crime, and my greatest supporter. <br>
+			Thank you for being my darling, my love, and my best friend. Here's to many more years of laughter, love, and unforgettable moments together.<br>
+			Happy Anniversary, darling. I am grateful for the past, excited for the present, and looking forward to a future filled with more love and adventures with you.<br>
+<br>
+With all my love,
+<br>
+Alyanah.
+            </b>
+          </p>
+        </div>
+        <div class="card card-front">
+          <img src="./uss.jpg" alt="us lookin good asf">
+          <h1>To my dearest, Kiel!</h1>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
